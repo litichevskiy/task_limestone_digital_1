@@ -1,0 +1,25 @@
+
+.container_calendar{
+    position: fixed;
+    width: 180px;
+    background: rgb(247, 247, 247);
+    padding: 15px 15px;
+    font-family: sans-serif;
+}
+
+.close_calendar{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(151, 143, 143);
+}
+
+.header_container_calendar{
+    font-size: 17px;
+}
+
+.select_date{
+    background-color: rgb(33, 150, 243);
+    font-size: 17px;
+}

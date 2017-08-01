@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/default_classes.css">
+        <link rel="stylesheet" type="text/css" href="css/pop_up/pop_up.css">
+        <link rel="stylesheet" type="text/css" href="css/calendar/calendar.css">
+        <link rel="stylesheet" type="text/css" href="css/notes/notes.css">
+    </head>
+    <body>
+        <div class="container_app">
+            <div class="container_notes">
+                <div class="container_note" data-role="i_want" >
+                    <div class="header">
+                        <div class="notes_name">Хочу</div>
+                        <div>
+                            <span class="open" data-role="open_close">open</span>
+                            <span class="close" data-role="open_close">close</span>
+                            <button class="button select_date">select date</button>
+                        </div>
+                    </div>
+                    <div class="content_notes">
+                        <ul class="list_notes"></ul>
+                    </div>
+                </div>
+                <div class="container_note" data-role="i_do">
+                    <div class="header">
+                        <div class="notes_name">Делаю</div>
+                        <div>
+                            <span class="open" data-role="open_close">open</span>
+                            <span class="close" data-role="open_close">close</span>
+                            <button class="button select_date">select date</button>
+                        </div>
+                    </div>
+                    <div class="content_notes">
+                        <ul class="list_notes"></ul>
+                    </div>
+                </div>
+                <div class="container_note" data-role="i_got">
+                    <div class="header">
+                        <div class="notes_name">Получил</div>
+                        <div>
+                            <span class="open" data-role="open_close">open</span>
+                            <span class="close" data-role="open_close">close</span>
+                            <button class="button select_date">select date</button>
+                        </div>
+                    </div>
+                    <div class="content_notes">
+                        <div class="container_button">
+                            <ul class="list_notes"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_calendar" hidden="true" >
+                <span class="close_calendar">&times;</span>
+                <div class="container_input">
+                    <span class="header_container_calendar">select date</span>
+                    <input type="date" class="input" autofocus="true" />
+                    <span class="error" hidden="true">выберите дату</span>
+                </div>
+                <div>
+                    <button class="button date_ok">Ok</button>
+                </div>
+            </div>
+            <div class="container_pop_up" >
+                <div class="content_pop_up">
+                    <span class="close_calendar close_pop_up">&times;</span>
+                    <div class="container_input">
+                        <input type="text" placeholder="enter name" name="header" class="input" autofocus="true" />
+                    </div>
+                    <div class="container_input">
+                        <textarea class="input" placeholder="enter text"></textarea>
+                    </div>
+                    <span class="error" hidden="true">поле неможет быть пустым</span>
+                    <div class="container_input">
+                        <button class="button date_ok">save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="publick/bundle.js"></script>
+    </body>
+</html>

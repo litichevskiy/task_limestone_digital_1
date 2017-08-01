@@ -1,0 +1,23 @@
+
+body{
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+input, button, textarea{
+    outline: none;
+}
+
+textarea{
+    resize: vertical;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
